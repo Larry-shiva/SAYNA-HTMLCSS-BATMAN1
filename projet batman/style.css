@@ -1,3 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: rajdhani;
+    src: url(../police/police/Rajdhani-Medium.ttf);
+}
+
+:root{
+    --yellow-color: #FFFF00;
+    --yellow-light: #f8f184;
+    --bleu-color: #19587d;
+    --white-color: #ffffff;
+    --gradient-white:#eddebf67;
+    --gradient-red: #89000978;
+    --black-color: #000;
+    --linear-gradient: #727272;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'rajdhani';
+    font-size: "36px";
+    font-weight: medium;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+
+button{
+    font-family: 'rajdhani';
+    font-size: "20px";
+    font-weight: 400;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
 body {
-    background-color: burlywood;
+    background-color: black;
+    color: white;
+    font-family: 'Space Grotesk';
+    font-weight: 300;
+}
+/***********************************le design de la navigations*************************************************/
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+ul{
+    list-style: none;
+}
+
+nav ul a{
+    color: var(--white-color) ;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'rajdhani';
+    /**text-decoration: none;**/
+}
+
+ul a:hover{
+    color: var(--yellow-color);
+}
+
+/*********design de la partie de l'entête Hero**********/
+
+#hero{
+    background-image: url(./Illustrations/Bathome1.png);
+    background-size: cover;
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #19587d;
+}
+/***design de la section des personnages batman ***/
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+#hero .titre{
+    margin: 20px 0;
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 22px;
+    padding: 10px 40px;
+    margin-top: 10px;
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-red)
+    );
+    box-shadow: var(--black-color) 15px 15px 50px;
+}
+
+#hero .flèche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 285px;
+}
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+    right: 80px;
+    top: 230px;
+}
+
+.scroll .social{
+    margin-top: 15px;
+}
+
+#batman_cinéma{
+    margin-top: 40px;
+}
+
+/******************** le design de la section à batman personnage *************************/
+#batman_cinéma{
+    margin-top: 40px;
+}
+.batman_personnage{
+    display: flex;
+    justify-content: space-between;
+}
+
+#batman_cinéma .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#batman_cinéma .description, .justice_league .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+}
+
+#batman_cinéma .personnage_info{
+    text-align: center;
+}
+
+.némésis{
+    display: flex;
+    justify-content: space-between;
+}
+
+#némésis .personnage_info{
+    text-align: center;
+}
+
+.alliés{
+    display: flex;
+    justify-content: space-between;
+}
+
+#alliés .personnage_info{
+    text-align: center;
+}
+
+/*******design sur la partie multimédia*******/
+
+#multimédia .button{
+    position: relative;
+    top: 145px;
+    background: none;
+    border: none;
+}
+
+#multimédia button.right{
+    right: -85%;
+
+}
+
+#multimédia .slider_multimédia{
+    display: flex;
+    width: 60%;
+    margin: 40% auto;
+}
+
+#multimédia .slider_multimédia{
+    width: 100%;
+}
+
+#multimédia .yellow{
+    color: var(--yellow-color);
+}
+
+#multimédia .slider_content{
+    padding: 15px;
+    background-color: linear-gradient(--gradient-white);
+    border_top_right_radius :20px ;
+    border-bottom_right_radius : 20px;
+}
+
+#multimédia p{
+    font-size: 14px;
 }
